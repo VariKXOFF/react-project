@@ -1,19 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import './index.css';
-import Index from './Index.jsx'
+import Men from "../Components/Men.js"
 
-
-
-ReactDOM.render(
-    <BrowserRouter>
-        <Index/>
-    </BrowserRouter>
-    ,
-  document.getElementById('root')
-);
-
+const MenPage = () => {
+    return (
+        <Men/>
+    )
+    
+}
 let clothes = document.querySelectorAll(".clothes-box")
 let clothesFull = document.querySelectorAll(".clothes-box__full")
 let closeButton = document.querySelectorAll(".close")
@@ -46,5 +38,4 @@ for (let i = 0; i < closeButton.length; i++) {
     })
 }
 
-
-
+export {MenPage}
